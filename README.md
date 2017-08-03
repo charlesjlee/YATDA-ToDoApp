@@ -42,14 +42,14 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 **Question 1:** "What are your reactions to the Android app development platform so far? Compare and contrast Android's approach to layouts and user interfaces in past platforms you've used."
 
 **Answer:** 
-The Android app development platform feels very comprehensive and modern. I enjoy working in it. The last app development platform I worked in was VB6. I didn't get too far into VB6 back then, but the overall workflow of developing in both platforms seems similar - auto-generate code by dragging objects onto the canvas then dig into the code to fine-tune the layout and add event logic.
+The Android app development platform feels very comprehensive and modern. I enjoy working in it. The last app development platform I worked in was VB6. I didn't get too far into VB6 back then, but the overall workflow of developing in both platforms seems similar: auto-generate code by dragging objects onto the canvas then dig into the code to fine-tune the layout and add event logic.
 
 **Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
 
 **Answer:**
-An adapter is used to convert a data source into View objects. Adapters and data sources have the same relationship that CSS and HTML do: the former specifies how data is displayed and the latter contains the data. This separation between style and data that adapters provide is important because it reduces code duplication.
+An adapter is used to convert a data source into View objects. Adapters and data sources have the same relationship that CSS and HTML do: the former specifies how data is displayed and the latter contains the data. This separation between style and data that an adapter provides is important because it reduces code duplication.
 
-The purpose of `convertView` in the `getView` method of the `ArrayAdapter` class is to provide a way to reuse old views. This provides performance gains by avoiding a View object instantiation and re-using an existing View object but with updated data.
+The purpose of `convertView` in the `getView` method of the `ArrayAdapter` class is to provide a way to reuse old views. This provides performance gains by re-using an existing View object with updated data instead of instantiating a new View object.
 
 ## Notes
 
